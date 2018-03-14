@@ -1,0 +1,41 @@
+<div id="wrapper"> 
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar logo"> <a href="#"><img src="assets/images/logo_sidebar.svg" alt=""></a> </li>
+            <li class="parent"><a href="#submenu1" data-toggle="collapse"><i class="zmdi zmdi-home zmdi-hc-lg"></i>TỔNG QUAN</a></li>
+            <div class="collapse sub-nav" id="submenu1">
+                <li><a routerLink="summary-total"><i class="zmdi zmdi-circle"></i>Báo cáo chung</a></li>
+                <li><a routerLink="summary-totala"><i class="zmdi zmdi-circle"></i>Báo cáo theo khu vực </a></li>
+            </div>
+            <li class="parent"><a href="#submenu2" data-toggle="collapse"><i class="zmdi zmdi-smartphone zmdi-hc-lg"></i>QUẢN LÝ HÀNG HÓA</a></li>
+            <div class="collapse sub-nav" id="submenu2">
+                <li><a routerLink="management-category"><i class="zmdi zmdi-circle"></i>Danh mục</a></li>
+                <li><a routerLink="management-product"><i class="zmdi zmdi-circle"></i>Sản phảm</a></li>
+                <li><a routerLink="management-promotion"><i class="zmdi zmdi-circle"></i>Khuyến mãi</a></li>
+                <li><a routerLink="management-option"><i class="zmdi zmdi-circle"></i>Tùy chọn cho món ăn</a></li>
+            </div>
+            <li class="parent"><a href="#submenu3" data-toggle="collapse"><i class="zmdi zmdi-settings zmdi-hc-lg"></i>GIAO DỊCH</a></li>
+            <div class="collapse sub-nav" id="submenu3">
+                <li><a href="#"><i class="zmdi zmdi-circle"></i>Nhật ký giao dịch</a></li>
+                <li><a href="#"><i class="zmdi zmdi-circle"></i>Hoàn tiền</a></li>
+            </div>
+            <li class="parent"><a href="#submenu4" data-toggle="collapse"><i class="zmdi zmdi-chart zmdi-hc-lg"></i>THỐNG KÊ</a></li>
+            <div class="collapse sub-nav" id="submenu4">
+                <li><a href="#"><i class="zmdi zmdi-circle"></i>Thống kê theo ngày</a></li>
+                <li><a href="#"><i class="zmdi zmdi-circle"></i>Thống kê theo tháng</a></li>
+                <li><a href="#"><i class="zmdi zmdi-circle"></i>Thống kê theo món ăn</a></li>
+            </div>
+
+            <li class="parent"><a href="#submenu5" data-toggle="collapse"><i class="zmdi zmdi-label zmdi-hc-lg"></i>QUẢN LÝ THỐNG KÊ</a></li>
+            <div class="collapse sub-nav" id="submenu5">
+                <li><a href="#"><i class="zmdi zmdi-circle"></i>Quản lý bàn</a></li>
+                <li><a href="#"><i class="zmdi zmdi-circle"></i>Quản lý khu vực</a></li>
+                <li><a href="#"><i class="zmdi zmdi-circle"></i>Quản lý máy in</a></li>
+                <li><a href="#"><i class="zmdi zmdi-circle"></i>Quản lý nhân viên</a></li>
+                <li><a href="#"><i class="zmdi zmdi-circle"></i>Phân quyền</a></li>
+                <li><a href="#"><i class="zmdi zmdi-circle"></i>Quản lý khu vực chế biến</a></li>
+            </div>
+        </ul>
+    </div> 
+    <router-outlet></router-outlet>
+</div>

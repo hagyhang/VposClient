@@ -1,0 +1,110 @@
+<!-- Page Content -->
+<div id="page-content-wrapper">
+    <div id="admin-header">
+        <div class="row">
+            <div class="col-xs-3"> <a href="#menu-toggle" id="menu-toggle"><i class="zmdi zmdi-menu zmdi-hc-lg"></i></a> </div>
+            <div class="col-xs-6 text-center"> <a href="#" class="logo"><img src="assets/images/logo_sidebar.svg" alt=""></a> </div>
+            <div class="col-xs-3 text-right">
+                <div class="dropdown"> <a href="#" class="dropdown-toggle mr15" id="acc-dropdown" data-toggle="dropdown"> <i class="zmdi zmdi-account zmdi-hc-lg"></i> <span class="hidden-sm hidden-xs ml5">gbcdemo</span> <span class="caret"></span> </a>
+                    <ul class="dropdown-menu mt5 mr5 dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#popupMyKey" data-toggle="modal"><i class="zmdi zmdi-key mr5"></i>Key</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="zmdi zmdi-power mr5"></i>Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-9 col-sm-9 col-xs-6">
+                <h1 class="page-title col-sm-8">Báo Cáo Chung</h1>
+            </div>
+            
+            <div class="col-lg-3 col-sm-3 col-xs-6 mt15">
+                <div class="form-group">
+                    <div class="input-group date form_date">
+                        <input type="text" class="form-control" />
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar zmdi zmdi-calendar zmdi-hc-2x mr15 blue-icon"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-lg-4"> 
+                <div href="#" class="panel status">
+                    <div class="panel-header ">DOANH THU TRONG NGÀY</div>
+                    <div class="panel-body">
+                        <div class="row text-center">
+                            <span class="num-status">{{data[0].num}}</span><span class="unit-status">VNĐ</span> 
+                        </div>     
+                        <div class="row panel-detail">
+                            <div class="col-sm-4">Tiền mặt</div>
+                            <div class="col-sm-8 text-right">{{data[0].num2}}</div>
+                        </div>
+                        <div class="row panel-detail">
+                            <div class="col-sm-4">Thẻ</div>
+                            <div class="col-sm-8 text-right">{{data[0].num3}}</div>
+                        </div>
+                        <div class="row panel-detail no-line">
+                            <div class="col-sm-4">ZaloPay</div>
+                            <div class="col-sm-8 text-right">0 (VNĐ)</div>
+                        </div>
+                        <div class="row text-center">
+                                <a (click)="clicked()">Xem thêm</a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-4"> 
+                <div href="#" class="panel status">
+                    <div class="panel-header ">DOANH SỐ</div>
+                    <div class="panel-body">
+                        <div class="text-center">
+                            <span class="num-status">0</span><span class="unit-status">VNĐ</span> 
+                        </div>  
+                        <div class="row panel-detail">
+                            <div class="col-sm-4">Khuyễn mãi</div>
+                            <div class="col-sm-8 text-right">0 (VNĐ)</div>
+                        </div>
+                        <div class="row panel-detail">
+                            <div class="col-sm-4">Doanh thu</div>
+                            <div class="col-sm-8 text-right">0 (VNĐ)</div>
+                        </div>
+                        <div class="row text-center mt42">
+                                <a>Xem thêm</a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-4"> 
+                <div href="#" class="panel status">
+                    <div class="panel-header ">HÓA ĐƠN</div>
+                    <div class="panel-body">
+                        <div class="text-center">
+                            <span class="num-status">0</span><span class="unit-status">VNĐ</span> 
+                        </div>  
+                        <div class="row panel-detail">
+                            <div class="col-sm-4">Tiền mặt</div>
+                            <div class="col-sm-8 text-right">0</div>
+                        </div>
+                        <div class="row panel-detail">
+                            <div class="col-sm-4">Thẻ</div>
+                            <div class="col-sm-8 text-right">0</div>
+                        </div>
+                        <div class="row panel-detail no-line">
+                            <div class="col-sm-4">ZaloPay</div>
+                            <div class="col-sm-8 text-right">0 (VNĐ)</div>
+                        </div>
+                        <div class="row text-center">
+                                <a>Xem thêm</a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /#page-content-wrapper --> 
